@@ -3,6 +3,7 @@ package com.example.lesson7;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,13 +19,23 @@ public class MainActivity extends AppCompatActivity {
     private Integer first, second;
     private Boolean isOperationClick;
     private String operation;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.text_view);
-    }
+        button = findViewById(R.id.btn_teleport);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Calkulator_continiud.class);
+                startActivity(intent);
+            }
+        });
+
+        }
 
     public void onNumberClick(View view) {
         switch (view.getId()) {
@@ -118,8 +130,8 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.btn_AC:
                 textView.setText("0");
-                first=0;
-                second=0;
+                first = 0;
+                second = 0;
                 break;
 
         }
@@ -128,48 +140,55 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint({"DefaultLocale", "SetTextI18n", "NonConstantResourceId"})
     public void onOperationClick(View view) {
-        switch (view.getId()) {
-            case R.id.btn_plus:
-                first = Integer.parseInt(textView.getText().toString());
-                isOperationClick=true;
-                operation="+";
-                break;
+            switch (view.getId()) {
+                case R.id.btn_plus:
+                    first = Integer.parseInt(textView.getText().toString());
+                    operation = "+";
+                    break;
 
+                case R.id.btn_minus:
+                    first = Integer.parseInt(textView.getText().toString());
+                    operation = "-";
 
-            case R.id.btn_equal:
-                second = Integer.parseInt((textView.getText().toString()));
-                Integer result = first + second;
-                textView.setText(result.toString());
-                isOperationClick=true;
-                operation="=";
-                break;
+                    break;
+                case R.id._btn_umnoghenie:
+                    first = Integer.parseInt(textView.getText().toString());
+                    operation = "*";
+                    break;
 
-            case R.id.btn_minus:
-                result = first - second;
-                textView.setText(result.toString());
-                isOperationClick=true;
-                operation="-";
-                break;
+                case R.id.btn_delenie:
+                    first = Integer.parseInt(textView.getText().toString());
+                    operation = "/";
+                    break;
 
-            case R.id._btn_umnoghenie:
+                case R.id.btn_equal:
+                    second = Integer.parseInt(textView.getText().toString());
+                    Integer result;
 
-                result = first * second;
-                textView.setText(result.toString());
-                isOperationClick=true;
-                operation="*";
-                break;
+                    switch (operation) {
+                        case "+":
+                            result = first + second;
+                            textView.setText(result.toString());
+                            break;
+                        case "-":
+                            result = first - second;
+                            textView.setText(result.toString());
+                            break;
+                        case "*":
+                            result = first * second;
+                            textView.setText(result.toString());
+                            break;
 
-            case R.id.btn_delenie:
-                result = first/second;
-                textView.setText(result.toString());
-                isOperationClick=true;
-                operation="/";
-                break;
+                        case "/":
+                            result = first / second;
+                            textView.setText(result.toString());
+                            break;
+                    }
+                    break;
 
-
+            }
+            isOperationClick = true;
         }
-        isOperationClick = true;
     }
 
 
-}

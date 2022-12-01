@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_dark2">
+
+    <TextView
+        android:id="@+id/tv_three"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/gray_dark3"
+        android:textColor="@color/orange"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textSize="20dp"
+        android:background="@drawable/ic_whatshot"
+        android:backgroundTint="@color/rad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/tv_three"
+        app:layout_constraintTop_toTopOf="@id/tv_three"
+        app:layout_constraintBottom_toBottomOf="@id/tv_three"
+        app:layout_constraintStart_toStartOf="@id/tv_three"/>
+
+    <TextView
+        android:id="@+id/tv_poloski"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:background="@drawable/ic_three_poloski"
+        android:paddingStart="32dp"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_three"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_three" />
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_search"
+        android:paddingStart="44dp"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_three" />
+
+    <TextView
+        android:id="@+id/tv_Policies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="138dp"
+        android:backgroundTint="@color/black"
+        android:text="Policies"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_three" />
+
+    <TextView
+        android:id="@+id/tv_textView"
+        android:layout_width="359dp"
+        android:layout_height="48dp"
+        android:layout_margin="26dp"
+        android:background="@drawable/custom_calculator"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_Policies" />
+
+    <TextView
+        android:background="@drawable/ic_navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintEnd_toEndOf="@id/tv_textView"
+        app:layout_constraintBottom_toBottomOf="@id/tv_textView"
+        app:layout_constraintTop_toTopOf="@id/tv_textView"/>
+
+    <TextView
+        android:id="@+id/tv_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Policy"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tv_textView"
+        app:layout_constraintStart_toStartOf="@id/tv_textView"
+        app:layout_constraintTop_toTopOf="@id/tv_textView"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <TextView
+        android:id="@+id/tv_textView2"
+        android:layout_width="359dp"
+        android:layout_height="48dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/custom_calculator"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_textView"
+        app:layout_constraintStart_toStartOf="@id/tv_textView"
+        app:layout_constraintTop_toBottomOf="@id/tv_textView" />
+
+    <TextView
+        android:background="@drawable/ic_navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintEnd_toEndOf="@id/tv_textView2"
+        app:layout_constraintBottom_toBottomOf="@id/tv_textView2"
+        app:layout_constraintTop_toTopOf="@id/tv_textView2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="Product Category"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tv_textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="@id/tv_textView2"
+        app:layout_constraintTop_toTopOf="@id/tv_textView2"/>
+
+    <TextView
+        android:id="@+id/tv_textView3"
+        android:layout_width="359dp"
+        android:layout_height="48dp"
+        android:layout_margin="6dp"
+        android:textStyle="bold"
+        android:background="@drawable/custom_calculator"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_textView2"
+        app:layout_constraintStart_toStartOf="@id/tv_textView2"
+        app:layout_constraintTop_toBottomOf="@id/tv_textView2"/>
+
+    <TextView
+        android:background="@drawable/ic_navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintEnd_toEndOf="@id/tv_textView3"
+        app:layout_constraintBottom_toBottomOf="@id/tv_textView3"
+        app:layout_constraintTop_toTopOf="@id/tv_textView3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="Origin Country"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintBottom_toBottomOf="@id/tv_textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_textView3"
+        app:layout_constraintTop_toTopOf="@id/tv_textView3"/>
+
+    <TextView
+        android:id="@+id/tv_textView4"
+        android:layout_width="359dp"
+        android:layout_height="48dp"
+        android:layout_margin="6dp"
+        android:textStyle="bold"
+        android:background="@drawable/custom_calculator"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_textView3"
+        app:layout_constraintStart_toStartOf="@id/tv_textView3"
+        app:layout_constraintTop_toBottomOf="@id/tv_textView3"/>
+
+    <TextView
+        android:background="@drawable/ic_navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintEnd_toEndOf="@id/tv_textView4"
+        app:layout_constraintBottom_toBottomOf="@id/tv_textView4"
+        app:layout_constraintTop_toTopOf="@id/tv_textView4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="Brand"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintBottom_toBottomOf="@id/tv_textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_textView4"
+        app:layout_constraintTop_toTopOf="@id/tv_textView4"/>
+
+    <TextView
+        android:id="@+id/tv_Current_Policies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="@color/black"
+        android:text="Current Policies"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tv_textView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tv_textView4"
+        app:layout_constraintTop_toBottomOf="@id/tv_textView4" />
+
+    <Button
+        android:id="@+id/bt_Export_as_CSV"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_calculator"
+        android:backgroundTint="@color/rad"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="90dp"
+        android:text="Export as CSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/tv_Current_Policies"
+        app:layout_constraintStart_toStartOf="@id/tv_Current_Policies"
+        app:layout_constraintTop_toBottomOf="@id/tv_Current_Policies"/>
+
+    <FrameLayout
+        android:id="@+id/fl_frameLayout"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintTop_toBottomOf="@id/bt_Export_as_CSV"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </FrameLayout>
+
+    <TextView
+        android:background="@drawable/ic_krug_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="@id/fl_frameLayout"
+        app:layout_constraintTop_toTopOf="@id/fl_frameLayout"
+        app:layout_constraintBottom_toTopOf="@id/tv_Product_Category"/>
+
+    <TextView
+        android:background="@drawable/ic_krug_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="@id/fl_frameLayout"
+        app:layout_constraintTop_toTopOf="@id/fl_frameLayout"
+        app:layout_constraintBottom_toTopOf="@id/tv_Product_Category"/>
+
+    <TextView
+        android:background="@drawable/ic_krug_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="54dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="@id/fl_frameLayout"
+        app:layout_constraintTop_toTopOf="@id/fl_frameLayout"
+        app:layout_constraintBottom_toTopOf="@id/tv_Product_Category"/>
+
+    <TextView
+        android:background="@drawable/ic_krug_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="74dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="@id/fl_frameLayout"
+        app:layout_constraintTop_toTopOf="@id/fl_frameLayout"
+        app:layout_constraintBottom_toTopOf="@id/tv_Product_Category"/>
+
+    <TextView
+        android:background="@drawable/ic_krug_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="94dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="@id/fl_frameLayout"
+        app:layout_constraintTop_toTopOf="@id/fl_frameLayout"
+        app:layout_constraintBottom_toTopOf="@id/tv_Product_Category"/>
+
+    <TextView
+        android:background="@drawable/ic_krug_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="114dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="@id/fl_frameLayout"
+        app:layout_constraintTop_toTopOf="@id/fl_frameLayout"
+        app:layout_constraintBottom_toTopOf="@id/tv_Product_Category"/>
+
+    <TextView
+        android:background="@drawable/ic_krug_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="134dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="@id/fl_frameLayout"
+        app:layout_constraintTop_toTopOf="@id/fl_frameLayout"
+        app:layout_constraintBottom_toTopOf="@id/tv_Product_Category"/>
+
+    <TextView
+        android:background="@drawable/ic_krug_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="154dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="@id/fl_frameLayout"
+        app:layout_constraintTop_toTopOf="@id/fl_frameLayout"
+        app:layout_constraintBottom_toTopOf="@id/tv_Product_Category"/>
+
+    <TextView
+        android:id="@+id/tv_Country_of_Origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginStart="26dp"
+        android:text="Country of Origin"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/fl_frameLayout"
+        app:layout_constraintStart_toStartOf="@id/fl_frameLayout"
+        app:layout_constraintTop_toTopOf="@id/fl_frameLayout"/>
+
+    <TextView
+        android:id="@+id/tv_keyboard_doun"
+        android:background="@drawable/ic_keyboard_doun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="@id/fl_frameLayout"
+        app:layout_constraintBottom_toBottomOf="@id/fl_frameLayout"
+        app:layout_constraintTop_toTopOf="@id/fl_frameLayout"/>
+
+    <TextView
+        android:id="@+id/tv_Product_Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-208dp"
+        android:layout_marginTop="56dp"
+        android:text="Product Category"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/fl_frameLayout"
+        app:layout_constraintBottom_toBottomOf="@id/fl_frameLayout"
+        app:layout_constraintTop_toTopOf="@id/fl_frameLayout"/>
+
+    <TextView
+        android:background="@drawable/ic_keyboard_doun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="250dp"
+        app:layout_constraintEnd_toEndOf="@id/fl_frameLayout"
+        app:layout_constraintBottom_toBottomOf="@id/fl_frameLayout"
+        app:layout_constraintTop_toTopOf="@id/fl_frameLayout"/>
+
+    <TextView
+        android:id="@+id/tv_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-26dp"
+        android:layout_marginTop="56dp"
+        android:text="Brai"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/fl_frameLayout"
+        app:layout_constraintBottom_toBottomOf="@id/fl_frameLayout"
+        app:layout_constraintTop_toTopOf="@id/fl_frameLayout"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

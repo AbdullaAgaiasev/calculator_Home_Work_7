@@ -9,5 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#FF9F0C</color>
     <color name="gray">#A5A6A5</color>
-    <color name="gray_dark">#333333</color>
+    <color name="gray_dark">#333333</color>1
+    <color name="gray_dark2">#C6C6C6</color>1
+    <color name="gray_dark3">#2A3136</color>1
+    <color name="rad">#D80404</color>1
 </resources>
